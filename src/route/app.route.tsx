@@ -1,10 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 const AppRoutes: React.FC = () => {
   return (
     <Router>
-      <Routes>{/* define route hear  */}</Routes>
+      <Routes>
+        {/* define route hear  */}
+        <Route index element={<></>}></Route>
+      </Routes>
     </Router>
   );
 };
